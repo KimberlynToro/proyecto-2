@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.logo{
+    width: 120px;
+}
+
+.logo:hover{
+    transform: skew(15deg);
+    transition: 3s;
+}
+
+
+.nav-link{
+color: #fff;
+}
+.navbar-nav .nav-link.active{
+    color: #fff;
+}
+.navbar-toggler-icon{
+    color: #fff;
+}
+
+.nav-link:focus, .nav-link:hover{
+    color: darkgoldenrod;
+}
+
+/* Main */
+
+.carousel-inner{
+    display: flex;
+}
+
+main div{
+    margin: 18px;
+    padding: 18px;
+
+}
+
+.texto1{
+    padding: 13px;
+    margin: 20px 5px 30px 15px;
+    font-size: 40px;
+    font-family: 'Square Peg', cursive;
+    font-weight: bold;
+    color: black;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* NOVEDAES */
+
+.grid-container{
+    margin: 20px;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    justify-items: center;
+    grid-row-gap: 15px;
+}
+
+.grid-container img{
+    height: 300px;
+}
+
+/* H2 Y H3 DE PRODUCTOS,AYUDA,PREGUNTAS Y CONTACTO */
+h2 {
+    padding: 13px;
+    margin: 20px 5px 30px 15px;
+    font-size: 35px;
+    font-family: 'Square Peg', cursive;
+    color: black;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+h3 {
+    padding: 10px;
+    margin: 15px;
+    font-size: 23px;
+    font-family: sans-serif;
+    color: black;
+    align-items: center;
+}
+
+/* PRODUCTOS */
+
+.imagenes-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* CONTACTO */
+
+.main-contacto form {
+    padding: 10px;
+    margin: 15px;
+    font-size: 13px;
+    font-family: sans-serif;
+    color: black;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer{
+    background-color: black;
+    
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98px;
+
+}
+
+footer div img{
+    height: 64px;
+    padding: 5px;
+    
+}
+
+/* Media querys */
+@media (max-width: 968px){
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 656px){
+    .grid-container {
+        grid-template-columns: repeat(1, 4fr);
+    }
+}
+
+@media (max-width: 342px){
+    .grid-container {
+        grid-template-columns: repeat(1, 4fr);
+    }
+    main div {
+        margin: 18px;
+        padding: 3px;
+    }
+    .carousel-inner {
+        display: flex;
+        margin: 0;
+    }
+}
